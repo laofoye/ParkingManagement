@@ -37,7 +37,7 @@ public class ParkingBoyTest_WhenHavingSeveralParkplace {
     * */
     @Test
     public void should_park_Sucess_when_park_is_empty(){
-        parkingBoy.park(new Car());
+        parkingBoy.park(new Car())  ;
         Assert.assertEquals(new Integer(totalAmount-1),parkingBoy.getAvailableNum());
     }
     /*
