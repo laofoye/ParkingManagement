@@ -1,7 +1,11 @@
-package edu.buaa.park;
+package edu.buaa.park.orignial;
+
+import edu.buaa.park.Car;
+import edu.buaa.park.NoCarException;
+import edu.buaa.park.ParkPlace;
+import edu.buaa.park.Ticket;
 
 import java.util.Collection;
-import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
