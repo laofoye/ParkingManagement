@@ -40,4 +40,16 @@ public class ParkingBoyTest {
         Ticket ticket=parkingBoy.park(car);
         Assert.assertSame(car,parkingBoy.fetch(ticket));
     }
+
+    @Test
+    public void parkBoy_ShouldSuperSmartfetchCar(){
+        Car car=new Car();
+        int maxParkingNum=20;
+        ParkPlace parkPlace=new ParkPlace(maxParkingNum);
+        ArrayList<ParkPlace> parkPlaces=new ArrayList<ParkPlace>();
+        parkPlaces.add(parkPlace) ;
+        ParkingBoy parkingBoy= new ParkingBoy(parkPlaces, new MaxKongZhiLvLotChooser());
+        Ticket ticket=parkingBoy.park(car);
+        Assert.assertSame(car,parkingBoy.fetch(ticket));
+    }
 }
